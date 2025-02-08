@@ -23,8 +23,8 @@ Build a simple Currency Conversion API using an external exchange rate API. Star
 
 * For GraphQL API:
 ```graphql
-mutation ConvertCurrency($from: String!, $to: String!, $amount: Float!) {
-    convertCurrency(convert_input: { from: $from, to: $to, amount: $amount }) {
+mutation convert($from: String!, $to: String!, $amount: Float!) {
+    convert(convert_input: { from: $from, to: $to, amount: $amount }) {
         conversion
         from
         to
