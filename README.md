@@ -32,3 +32,11 @@ mutation ConvertCurrency($from: String!, $to: String!, $amount: Float!) {
 }
 ```
 
+
+## external API use 
+https://www.exchangerate-api.com/
+
+
+## .env variable
+
+API_KEY
