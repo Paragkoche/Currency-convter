@@ -32,11 +32,26 @@ mutation ConvertCurrency($from: String!, $to: String!, $amount: Float!) {
 }
 ```
 
-
-## external API use 
+## External API use 
 https://www.exchangerate-api.com/
-
 
 ## .env variable
 
 API_KEY
+
+### Setup for NestJS Node
+
+0. **clone**
+    ```bash
+    git clone https://github.com/Paragkoche/Currency-convter.git
+    ```
+
+1. **Navigate to the project directory:**
+    ```bash
+    cd Currency-convter
+    ```
+
+2. **Install required dependencies:**
+    ```bash
+    npm install 
+    ```
