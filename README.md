@@ -23,12 +23,38 @@ Build a simple Currency Conversion API using an external exchange rate API. Star
 
 * For GraphQL API:
 ```graphql
-mutation convert($from: String!, $to: String!, $amount: Float!) {
-    convert(convert_input: { from: $from, to: $to, amount: $amount }) {
+mutation Convert {
+    convert(convert_input: { from: "USD", to: "INR", amount: 200 }) {
         conversion
         from
         to
     }
+}
+```
+
+* For Websocket API:
+link localhost:3000
+```json
+{
+    "from": "USD",
+    "to": "INR",
+    "amount": 500
+}
+```
+
+Response:
+```json
+{
+    "conversion": 43838.55,
+    "from": "USD",
+    "to": "INR"
+}
+
+Acknowledgment:
+```json
+{
+    "status": "success",
+    "message": "Conversion successful"
 }
 ```
 
